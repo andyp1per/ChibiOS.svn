@@ -18,7 +18,11 @@
  * @file    hal_buffered_serial.h
  * @brief   Buffered Serial Driver macros and structures.
  *
+<<<<<<< HEAD
  * @addtogroup HAL_BUFFERED_SERIAL
+=======
+ * @addtogroup BUFFERED_SERIAL
+>>>>>>> 0dff9ec599... Trunk HAL back-port begin, not complete.
  * @{
  */
 

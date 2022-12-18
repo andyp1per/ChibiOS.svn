@@ -29,7 +29,11 @@
 #define HALCONF_H
 
 #define _CHIBIOS_HAL_CONF_
+<<<<<<< HEAD
 #define _CHIBIOS_HAL_CONF_VER_8_4_
+=======
+#define _CHIBIOS_HAL_CONF_VER_8_0_
+>>>>>>> 0dff9ec599... Trunk HAL back-port begin, not complete.
 
 #include "mcuconf.h"
 
@@ -335,6 +339,7 @@
 /*===========================================================================*/
 
 /**
+<<<<<<< HEAD
  * @brief   Timeout before assuming a failure while waiting for card idle.
  * @note    Time is in milliseconds.
  */
@@ -347,6 +352,17 @@
  */
 #if !defined(MMC_USE_MUTUAL_EXCLUSION) || defined(__DOXYGEN__)
 #define MMC_USE_MUTUAL_EXCLUSION            TRUE
+=======
+ * @brief   Delays insertions.
+ * @details If enabled this options inserts delays into the MMC waiting
+ *          routines releasing some extra CPU time for the threads with
+ *          lower priority, this may slow down the driver a bit however.
+ *          This option is recommended also if the SPI driver does not
+ *          use a DMA channel and heavily loads the CPU.
+ */
+#if !defined(MMC_NICE_WAITING) || defined(__DOXYGEN__)
+#define MMC_NICE_WAITING                    TRUE
+>>>>>>> 0dff9ec599... Trunk HAL back-port begin, not complete.
 #endif
 
 /*===========================================================================*/

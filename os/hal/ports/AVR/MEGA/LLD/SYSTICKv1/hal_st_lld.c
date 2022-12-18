@@ -193,7 +193,11 @@ void st_lld_init(void) {
   TCCR1A     = 0;
   TCCR1B     = _BV(WGM12);
 
+<<<<<<< HEAD
   /* Start disabled. */
+=======
+  /* start disabled. */
+>>>>>>> 0dff9ec599... Trunk HAL back-port begin, not complete.
   TCCR1C     = 0;
   OCR1A      = 0;
   TCNT1      = 0;

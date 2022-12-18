@@ -106,7 +106,11 @@ static inline void st_lld_start_alarm(systime_t time) {
   /* Reset pending. */
   TIFR_REG = _BV(OCF1A);
 
+<<<<<<< HEAD
   /* Enable interrupt */
+=======
+  /* enable interrupt */
+>>>>>>> 0dff9ec599... Trunk HAL back-port begin, not complete.
   TIMSK_REG = _BV(OCIE1A);
 }
 
