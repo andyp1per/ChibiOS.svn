@@ -481,6 +481,8 @@ static inline bool chThdQueueIsEmptyI(threads_queue_t *tqp) {
  *
  * @iclass
  */
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wcast-align"
 static inline void chThdDoDequeueNextI(threads_queue_t *tqp, msg_t msg) {
   thread_t *tp;
 
@@ -493,6 +495,7 @@ static inline void chThdDoDequeueNextI(threads_queue_t *tqp, msg_t msg) {
   tp->u.rdymsg = msg;
   (void) chSchReadyI(tp);
 }
+#pragma GCC diagnostic pop
 
 #endif /* CHTHREADS_H */
 
